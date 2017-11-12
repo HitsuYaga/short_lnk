@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export default () => {
-  return (
-    <p>Not Found Component here!</p>
-  )
-}
+  return <p>Not Found Component here!</p>;
+};

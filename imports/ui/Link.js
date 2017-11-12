@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import LinkList from './LinkList';
-import PrivateHeader from './PrivateHeader'
-import AddLink from './AddLink';
+import LinkList from "./LinkList";
+import PrivateHeader from "./PrivateHeader";
+import AddLink from "./AddLink";
 
 export default () => {
   return (
@@ -11,5 +11,5 @@ export default () => {
       <LinkList />
       <AddLink />
     </div>
-  )
-}
+  );
+};

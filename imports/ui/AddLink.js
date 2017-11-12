@@ -1,15 +1,14 @@
-import { Meteor } from 'meteor/meteor';
-import React from 'react'
+import { Meteor } from "meteor/meteor";
+import React from "react";
 
 export default class AddLink extends React.Component {
-
   onSubmit(e) {
     const url = this.refs.url.value.trim();
     e.preventDefault();
 
     if (url) {
-      Meteor.call('links.insert', url)
-      this.refs.url.value = '';
+      Meteor.call("links.insert", url);
+      this.refs.url.value = "";
     }
   }
 
@@ -18,10 +17,10 @@ export default class AddLink extends React.Component {
       <div>
         <p>Add link</p>
         <form onSubmit={this.onSubmit.bind(this)}>
-          <input type="text" ref="url" placeholder="URL"/>
+          <input type="text" ref="url" placeholder="URL" />
           <button>Add Link</button>
         </form>
       </div>
-    )
+    );
   }
 }
