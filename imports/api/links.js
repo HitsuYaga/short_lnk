@@ -27,7 +27,9 @@ Meteor.methods({
     Links.insert({
       url: url,
       userId: this.userId,
-      visible: true
+      visible: true,
+      visitedCount: 0,
+      lastVisitedAt: null
     });
   },
   "links.setVisibility": function(_id, visible) {
