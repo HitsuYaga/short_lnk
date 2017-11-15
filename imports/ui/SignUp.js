@@ -34,20 +34,22 @@ export default class SignUp extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Join Short Lnk</h1>
-        {this.state.error ? <p>{this.state.error}</p> : undefined}
-        <form onSubmit={this.onSubmit.bind(this)} noValidate>
-          <input ref="email" type="email" name="email" placeholder="Email" />
-          <input
-            ref="password"
-            type="password"
-            name="password"
-            placeholder="Password"
-          />
-          <button>Create Account</button>
-        </form>
-        <Link to="/">Already have an account?</Link>
+      <div className="box-view">
+        <div className="box-view__box">
+          <h1>Join Short Lnk</h1>
+          {this.state.error ? <p>{this.state.error}</p> : undefined}
+          <form onSubmit={this.onSubmit.bind(this)} noValidate>
+            <input ref="email" type="email" name="email" placeholder="Email" />
+            <input
+              ref="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <button>Create Account</button>
+          </form>
+          <Link to="/">Already have an account?</Link>
+        </div>
       </div>
     );
   }
