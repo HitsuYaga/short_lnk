@@ -2,7 +2,7 @@ import { Meteor } from "meteor/meteor";
 import React from "react";
 import { Router, Route, browserHistory } from "react-router";
 
-import SignUp from "./../ui/SignUp";
+import SignUp from "./../ui/Signup";
 import Link from "./../ui/Link";
 import NotFound from "./../ui/NotFound";
 import Login from "./../ui/Login";

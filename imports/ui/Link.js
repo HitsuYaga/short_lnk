@@ -1,17 +1,19 @@
 import React from "react";
 
-import LinkList from "./LinkList";
+import LinksList from "./LinksList";
 import PrivateHeader from "./PrivateHeader";
 import AddLink from "./AddLink";
-import LinkListFilter from "./LinkListFilter";
+import LinksListFilters from "./LinksListFilters";
 
 export default () => {
   return (
     <div>
-      <PrivateHeader title="Your links" />
-      <LinkListFilter />
-      <AddLink />
-      <LinkList />
+      <PrivateHeader title="Your Links" />
+      <div className="page-content">
+        <LinksListFilters />
+        <AddLink />
+        <LinksList />
+      </div>
     </div>
   );
 };
